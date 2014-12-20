@@ -81,7 +81,7 @@
 	  			break;
 	  		case 'sqrt':
 	  			result = sqrt(operand1, operand2);
-	  			answer.innerHTML = Math.round(result * 10000) / 10000;
+	  			answer.innerHTML = Math.round(result * 10000) / 10000	;
 	  			break;
 	  		default:
 	  			console.log('Didn\'t match');

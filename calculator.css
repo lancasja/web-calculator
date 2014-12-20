@@ -19,8 +19,14 @@ a {
 	text-decoration: none;
 }
 
+h1 {
+	text-align: center;
+}
+
 #calculator {
 	text-align: center;
+	height: 275px;
+	overflow: hidden;
 }
 
 .selected:not(#clear) {
@@ -73,16 +79,63 @@ input[disabled="true"] {
 }
 
 #answer {
-	
+
 }
 
 ul {
-	margin-top: 120px;
+	text-align: center;
+	list-style: none;
 }
 
 
+/* Toggle Theme */
+label {
+  display: block;
+  height: 25px;
+  width: 100px;
+  background: #eee;
+  text-align: center;
+  font: 14px/25px Helvetica, Arial, sans-serif;
+  margin: 20px 0;
+  position: fixed;
+}
+ 
+label:hover {
+  background: #ddca7e;
+  color: #fff;
+  cursor: pointer;
+}
+ 
+input#lightswitch {
+   position: absolute;
+   top: -9999px;
+   left: -9999px;
+}
 
+/* Dark Theme */
+input#lightswitch:checked + #calculator {
+  background: #222;
+}
 
+input#lightswitch:checked + #calculator .operators .button {
+	color: #fff;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+input#lightswitch:checked + #calculator input {
+	background: none;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	color: #fff;
+}
+
+input#lightswitch:checked + #calculator #clear {
+	background: rgba(255, 255, 255, 0.1);
+}
+
+input#lightswitch:checked + #calculator #equals,
+input#lightswitch:checked + #calculator #answer {
+	color: #fff;
+}
 
 
 
