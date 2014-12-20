@@ -5,44 +5,34 @@
 	<link rel="stylesheet" href="calculator.css">
 </head>
 <body>
-	
-	<h1>Web Calculator</h1>
 
-	<div id="calculator" class="calculator">
+<h1>Web Calculator</h1>
+
+	<div id="calculator">
 		
-		<div class="display">
-			<p>0</p>
+		<input type="text" id="input1">
+
+		<div class="operators">
+			<a class="button" href="#" id="add">+</a>
+			<a class="button" href="#" id="subtract">-</a>
+			<a class="button" href="#" id="multiply">x</a>
+			<a class="button" href="#" id="divide">/</a>
+			<a class="button" href="#" id="sqrt">sqrt</a>
 		</div>
 
-		<div class="keyboard">
+		<input type="text" id="input2">
 
-			<div class="key key-util">C</div>
-			<div class="key key-util">+/-</div>
-			<div class="key key-util">%</div>
-			<div class="key key-operator">/</div>
+		<a class="button" href="#" id="equals">=</a>
 
-			<div class="key">7</div>
-			<div class="key">8</div>
-			<div class="key">9</div>
-			<div class="key key-operator">x</div>
-
-			<div class="key">4</div>
-			<div class="key">5</div>
-			<div class="key">6</div>
-			<div class="key key-operator">-</div>
-
-			<div class="key">1</div>
-			<div class="key">2</div>
-			<div class="key">3</div>
-			<div class="key key-operator">+</div>
-
-			<div class="key key-zero">0</div>
-			<div class="key">.</div>
-			<div class="key key-operator">=</div>
-		</div>
+		<div id="answer">0</div>
 	</div>
 
-	<h2>Made by: Jonathan Lancaster</h2>
+
+	<ul>
+		<li>Input your values</li>
+		<li>Select an operator</li>
+		<li>Press the equals sign</li>
+	</ul>
 
 	<script src="calculator.js"></script>
 </body>
