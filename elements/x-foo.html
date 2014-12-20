@@ -1,0 +1,36 @@
+<polymer-element name="x-foo">
+	<template>
+		<link rel="stylesheet" href="x-foo.css">
+		
+		<h1>Web Calculator</h1>
+
+		<div id="calculator" theme="dark">
+
+			<input type="text" id="input1">
+
+			<div class="operators">
+				<a class="button" href="#" id="add">+</a>
+				<a class="button" href="#" id="subtract">-</a>
+				<a class="button" href="#" id="multiply">x</a>
+				<a class="button" href="#" id="divide">/</a>
+				<a class="button" href="#" id="sqrt">sqrt</a>
+				<a class="button" href="#" id="clear">C</a>
+			</div>
+
+			<input type="text" id="input2">
+
+			<a class="button" href="#" id="equals">=</a>
+
+			<div id="answer">0</div>
+		</div>
+
+
+		<ul>
+			<li>Input your values</li>
+			<li>Select an operator</li>
+			<li>Click the equals sign</li>
+		</ul>
+	</template>
+
+	<script src="x-foo.js"></script>
+</polymer-element>
