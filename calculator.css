@@ -23,8 +23,12 @@ a {
 	text-align: center;
 }
 
-.selected {
+.selected:not(#clear) {
 	background: #7e7;
+}
+
+#clear {
+	background: #eee;
 }
 
 input, .operators, #answer {
@@ -64,6 +68,38 @@ input[disabled="true"] {
 	top: -50px;
 }
 
+#equals {
+	margin: 0 10px;
+}
+
+#answer {
+	
+}
+
 ul {
 	margin-top: 120px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
