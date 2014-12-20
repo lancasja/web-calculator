@@ -1,5 +1,6 @@
 (function() {
 
+		var calc = document.querySelector('#calculator');
 	  var input1 = document.querySelector('#input1');
 	  var input2 = document.querySelector('#input2');
 	  var operators = document.querySelectorAll('.operators .button');
@@ -121,3 +122,8 @@
 	  });
 
 })();
+
+
+
+
+
